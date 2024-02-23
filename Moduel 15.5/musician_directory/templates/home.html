@@ -36,7 +36,7 @@ Home
                 <td>{{i.rating}}</td>
                 <td>{{i.author.instrument_type}}</td>
                 <td>{{i.album_name}}</td>
-                <td>{{i.relase_date}}</td>
+                <td>{{i.release_date}}</td>
                 <td><a class="btn btn-warning my-2" href="{% url 'edit_album' i.id %}">Edit</a>  <a class="btn btn-danger my-2" href="{% url 'delete_album' i.id %}">Delete</a></td>
             </tr>
             {% endfor %}

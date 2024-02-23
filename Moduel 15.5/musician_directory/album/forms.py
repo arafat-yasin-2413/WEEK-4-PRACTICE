@@ -6,7 +6,7 @@ class AlbumForm(forms.ModelForm):
         model = Album 
         fields ="__all__"
         widgets = {
-            'relase_date':forms.DateInput(attrs={'type':'date'}),
+            'release_date':forms.DateInput(attrs={'type':'date'}),
             'rating':forms.NumberInput(attrs={'type':'number','min':1,'max':5,'step':1})
         }
         labels = {

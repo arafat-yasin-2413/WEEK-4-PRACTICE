@@ -4,7 +4,7 @@ from musician.models import Musician
 # Create your models here.
 class Album(models.Model):
     album_name = models.CharField(max_length=100)
-    relase_date = models.DateField()
+    release_date = models.DateField()
     rating = models.IntegerField()
     author = models.ForeignKey(Musician, on_delete =models.CASCADE)
 
