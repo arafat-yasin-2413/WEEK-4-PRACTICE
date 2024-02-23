@@ -14,26 +14,26 @@ class MyModel(models.Model):
 class NewModel(models.Model):
     name = models.CharField(max_length=40)
     email = models.EmailField()
-    # file = models.FileField(upload_to='uploads/')
+    file = models.FileField(upload_to='uploads/')
     # file_path = models.FilePathField(path='/first_app/')
 
-    # float_val = models.FloatField()
+    float_val = models.FloatField()
     # foreign_key = models.ForeignKey(MyModel, on_delete=models.CASCADE)
 
-    # ipVal = models.GenericIPAddressField()
-    # file = models.FileField()
+    ipVal = models.GenericIPAddressField()
+    file = models.FileField()
 
     # int_val = models.IntegerField()
 
-    # pos_int = models.PositiveBigIntegerField()
-    # pos_bit_int = models.PositiveBigIntegerField()
-    # pos_small_int = models.PositiveSmallIntegerField()
+    pos_int = models.PositiveBigIntegerField()
+    pos_big_int = models.PositiveBigIntegerField()
+    pos_small_int = models.PositiveSmallIntegerField()
 
-    # slug_text = models.SlugField()
-    # small_int = models.SmallIntegerField()
+    slug_text = models.SlugField()
+    small_int = models.SmallIntegerField()
 
-    # text = models.TextField()
-    # time = models.TimeField()
+    text = models.TextField()
+    time = models.TimeField()
 
     # uuid = models.UUIDField()
     
@@ -43,9 +43,9 @@ class NewModel(models.Model):
     # big_integer_field = models.BigIntegerField()
     # text = models.CharField(max_length=255)
 
-    # date = models.DateField()
-    # appointment = models.DateTimeField()
+    date = models.DateField()
+    appointment = models.DateTimeField()
 
-    # value = models.DecimalField(max_digits = 5, decimal_places=2)
-    # duration = models.DurationField()
+    value = models.DecimalField(max_digits = 5, decimal_places=2)
+    duration = models.DurationField()
 
